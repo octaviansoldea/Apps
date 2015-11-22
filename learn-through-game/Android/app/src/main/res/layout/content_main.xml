@@ -12,22 +12,6 @@
     tools:context="com.example.terra.learnthroughgame.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Learn Through Game!"
-        android:id="@+id/textView_Main_learn_through_game" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Music"
-        android:id="@+id/button_Main_music"
-        android:layout_marginTop="81dp"
-        android:layout_below="@+id/textView_Main_learn_through_game"
-        android:layout_centerHorizontal="true" />
-
-    <!-- From Matej -->
     <ImageView
         android:id="@+id/imageView_Main"
         android:src="@drawable/tj"
@@ -37,6 +21,7 @@
         android:layout_alignParentRight="true"
         style="@style/mainTextStyle"
         android:adjustViewBounds="true"/>
+
     <Button
         android:layout_width="@dimen/arrow_size"
         android:layout_height="@dimen/arrow_size"
@@ -87,7 +72,15 @@
             android:id="@+id/textView_Main_learn_through_game"
             android:layout_row="6"
             android:layout_column="1" />
-
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:id="@+id/button_Main_music"
+            android:layout_marginTop="81dp"
+            android:layout_below="@+id/textView_Main_learn_through_game"
+            android:layout_centerHorizontal="true" />
     </GridLayout>
 
 
