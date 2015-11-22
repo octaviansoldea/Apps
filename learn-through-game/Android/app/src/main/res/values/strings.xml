@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LearnThroughGame</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_text">
+        This app offers quality time when introducing concepts from different domains such as mathematics,\n
+        music, economics, psychology, and more. The authors aimed absolute beginners as well as advanced \n
+        ones, you know, not necessarily children ....\n
+    </string>
+    <string name="buttonStart">Enter Application</string>
+</resources>

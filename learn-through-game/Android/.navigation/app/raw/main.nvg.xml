@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.terra.learnthroughgame.MusicalInstrumentsQuizActivity"/>
+      <point      
+        x = "3600"      
+        y = "1240"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.terra.learnthroughgame.MusicLessonsTOCActivity"/>
+      <point      
+        x = "2452"      
+        y = "44"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.terra.learnthroughgame.MusicActivity"/>
+      <point      
+        x = "1384"      
+        y = "44"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.terra.learnthroughgame.Main2Activity"/>
+      <point      
+        x = "1844"      
+        y = "92"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.terra.learnthroughgame.MainActivity"/>
+      <point      
+        x = "240"      
+        y = "48"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

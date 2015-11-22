@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.terra.learnthroughgame.MusicLessonsTOCActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Musical Instruments Quiz"
+        android:id="@+id/button_Music_TOC_musical_instruments_quiz"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes and Symbols"
+        android:id="@+id/button_Music_TOC_notes_and_symbols"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button_Music_TOC_musical_instruments_quiz"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recognizze the Sound"
+        android:id="@+id/button_Music_TOC_recognize_the_sound"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button_Music_TOC_notes_and_symbols"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recognize the Astist/Compositor"
+        android:id="@+id/button_Music_TOC_recognize_the_artisst_or_compositor"
+        android:textAllCaps="false"
+        android:layout_below="@+id/button_Music_TOC_recognize_the_sound"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compositor"
+        android:id="@+id/button_Music_TOC_compositor"
+        android:textAllCaps="false"
+        android:layout_above="@+id/button_Music_TOC_music_director"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Director"
+        android:id="@+id/button_Music_TOC_music_director"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Musical Instrument Simulator"
+        android:id="@+id/button_Music_TOC_musical_instrument_simulator"
+        android:textAllCaps="false"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button_Music_TOC_recognize_the_artisst_or_compositor"
+        android:layout_alignEnd="@+id/button_Music_TOC_recognize_the_artisst_or_compositor" />
+
+</RelativeLayout>

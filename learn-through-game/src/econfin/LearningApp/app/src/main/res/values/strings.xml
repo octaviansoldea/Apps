@@ -1,8 +1,0 @@
-<resources >
-    <string name="app_name">LearningApp</string>
-    <string name="title_main">LearningApp</string>
-    <string name="main_text">
-        Bla, bla, bla. \nBla, bla, bla.\nBla, bla, bla. \nBla, bla, bla.\nBla, bla, bla. \nBla, bla, bla.\nBla, bla, bla. \nBla, bla, bla.\n
-    </string>
-    <string name="buttonStart">Enter Application</string>
-</resources>
