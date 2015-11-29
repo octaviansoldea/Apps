@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        android:debuggable="true"
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -20,7 +21,19 @@
         </activity>
         <activity android:name=".MusicActivity" />
         <activity android:name=".MusicLessonsTOCActivity" />
-        <activity android:name=".MusicalInstrumentsQuizActivity"></activity>
+        <activity android:name=".MusicalInstrumentsQuizActivity" />
+        <activity
+            android:name=".EconActivity"
+            android:label="@string/title_activity_econ"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EconLessonActivity"
+            android:label="@string/title_activity_econ_lesson"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EconAssignmentActivity"
+            android:label="@string/title_activity_econ_assignment"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

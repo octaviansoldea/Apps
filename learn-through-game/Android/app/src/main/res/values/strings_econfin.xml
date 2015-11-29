@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_text_EconTitle">Lets dive into the economics!</string>
+    <string name="main_text_EconContent">Improve your understanding of the study of the economy, the study of the
+        coordination process, the study of the effects of scarcity, the science of choice, and the
+        study of human behavior. Improve your understanding of economics.
+    </string>
+    <string name="buttonStartEcon">Enter</string>
+    <string name="buttonStartFB">FB</string>
+
+    <string name="titleBarEconCh1Content">CONTENT
+        \n  - Compounding
+        \n  - Present Value and Discounting
+        \n  - Annuities
+        \n  - Loan Amortization
+        \n  - Exchange Rates
+    </string>
+
+    <string name="titleBarEconCh1ContentDescription">
+        DESCRIPTION\nFinancial decisions involve costs and benefits that are spread over time. Should we take a loan for a new car?
+        Time value of money states that a dollar is today worth more than tomorrow for at least three reasons:
+        it can be invested and earn an interest; inflation reduces future value of money; future is uncertain.
+    </string>
+
+    <!-- BAR TITLES -->
+    <string name="titleBarEconPart1">Part 1: TIME AND RESOURCE ALLOCATION</string>
+    <string name="titleBarEconPart2">Part 2: ASSET PRICING</string>
+
+    <!-- SUBJECT TITLES -->
+    <string name="titleBarEconCh1">Time Value of Money and Discounting</string>
+    <string name="titleBarEconCh1Objective">
+        OBJECTIVE
+        \n  - To explain the concepts of compounding, discounting, future value and present value
+        \n  - To show how these concepts are applied in making financial decisions
+    </string>
+
+    <!-- ASSIGNMENT -->
+    <string name="titleAssignmentDiscounting">Discounting</string>
+</resources>
