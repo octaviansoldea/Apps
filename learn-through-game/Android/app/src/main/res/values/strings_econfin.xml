@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="main_text_EconFinTitle">Lets dive into the economics and finance!</string>
-    <string name="main_text_EconFinContent">Improve your understanding of the study of the economy, the study of the
-        coordination process, the study of the effects of scarcity, the science of choice, and the
-        study of human behavior. Improve your understanding of economics.
+    <string name="main_text_EconFinContent">Improve your understanding of the study of the economy, of the human behavior and
+        coordination process, about decision-making and scarcity.
+		Improve your understanding of economics.
     </string>
     <string name="buttonStartEconFin">Enter</string>
     <string name="buttonStartFB">FB</string>

@@ -1,7 +1,9 @@
 package com.example.terra.learnthroughgame;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,6 +19,13 @@ public class EconFinLessonActivity extends AppCompatActivity {
         tv.setRotation(-90);
 
         initActivity(Field.ECON_FIN);
+
+        findViewById(R.id.buttonEconFinForward).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EconFinLessonActivity.this, com.example.terra.learnthroughgame.EconFinAssignmentActivity.class));
+            }
+        });
     }
 
     enum Field {

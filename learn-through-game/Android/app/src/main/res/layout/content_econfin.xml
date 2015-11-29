@@ -8,70 +8,75 @@
     android:paddingBottom="@dimen/zero_margin"
     android:id="@+id/econFinLayout">
 
-
-    <ImageView
-        android:id="@+id/imageView_EconFin"
-        android:src="@drawable/economics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        style="@style/mainTextStyle"
-        android:adjustViewBounds="true"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_text_EconFinTitle"
-        style="@style/styleTitle"
-        android:id="@+id/textView_Main_EconFin"
-        android:layout_below="@+id/imageView_EconFin"
-        android:paddingTop="10dp"
-        android:paddingLeft="100dp"
-        android:paddingRight="10dp"
-        android:visibility="visible" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/main_text_EconFinContent"
-        style="@style/styleContent"
-        android:id="@+id/textView_Main_EconFinContent"
-        android:layout_below="@+id/textView_Main_EconFin"
-        android:paddingTop="10dp"
-        android:paddingLeft="100dp"
-        android:paddingRight="10dp"
-        android:visibility="visible"
-        />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView_Main_EconFinContent"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="10dp"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
         >
 
-        <Button
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView_EconFin"
+            android:src="@drawable/economics"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonStartEconFin"
-            android:id="@+id/button_Main_EconFin"
-            android:background="@drawable/styled_button"
-            android:layout_below="@id/textView_Main_EconFinContent"
-            android:textSize="12sp"
+            style="@style/mainTextStyle"
+            android:adjustViewBounds="true"
             />
 
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/buttonStartFB"
-            android:id="@+id/button_Main_EconFin_FB"
-            android:background="@drawable/styled_button"
-            android:textSize="12sp"
+            android:text="@string/main_text_EconFinTitle"
+            style="@style/styleTitle"
+            android:id="@+id/textView_Main_EconFin"
+            android:layout_below="@+id/imageView_EconFin"
+            android:paddingTop="10dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_text_EconFinContent"
+            style="@style/styleContent"
+            android:id="@+id/textView_Main_EconFinContent"
+            android:paddingTop="10dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            >
+<!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonStartEconFin"
+                android:id="@+id/button_Main_EconFin"
+                android:background="@drawable/styled_button"
+                android:layout_below="@id/textView_Main_EconFinContent"
+                android:textSize="@dimen/font_small"
+                />
+-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonStartFB"
+                android:id="@+id/button_Main_EconFin_FB"
+                android:background="@drawable/styled_button"
+                android:textSize="@dimen/font_small"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
     <Button
@@ -84,6 +89,15 @@
         android:id="@+id/buttonEconFinBack"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonStartEconFin"
+        android:id="@+id/button_Main_EconFin"
+        android:background="@drawable/styled_button"
+        android:textSize="@dimen/font_small"
         />
 
 </RelativeLayout>

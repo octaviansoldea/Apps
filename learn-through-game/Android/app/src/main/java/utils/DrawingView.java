@@ -1,6 +1,7 @@
 package utils;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -9,72 +10,46 @@ import android.graphics.Canvas; //A surface on which to draw
 import android.graphics.Paint;  //holds the style, color, and other information needed
                                 // to draw any graphics including bitmaps, text, and geometric shapes
 import android.graphics.Path;   //A set of vector-drawing commands such as lines, curves, rectangles
-import android.view.MotionEvent;
 
 
 public class DrawingView extends View {
-    public DrawingView(Context context, AttributeSet attrs){
-        super(context, attrs);
-        setupDrawing();
-    }
-
-    private Path drawPath;          //drawing path
-    private Paint drawPaint, canvasPaint;   //drawing and canvas paint
-    private int paintColor = 0xFF660000;    //initial color
+    private Paint m_DrawPaint, canvasPaint;   //drawing and canvas paint
     private Canvas drawCanvas;      //canvas
     private Bitmap canvasBitmap;    //canvas bitmap
+    private ShapeFromUser m_ShapeFromUser;
 
-    private void setupDrawing(){
-        drawPath = new Path();
-        drawPaint = new Paint();
+    public DrawingView(Context context, AttributeSet attrs){
+        super(context, attrs);
 
-        drawPaint.setColor(paintColor);
-
-        drawPaint.setAntiAlias(true);
-        drawPaint.setStrokeWidth(20);
-        drawPaint.setStyle(Paint.Style.STROKE);
-        drawPaint.setStrokeJoin(Paint.Join.ROUND);
-        drawPaint.setStrokeCap(Paint.Cap.ROUND);
-
-        canvasPaint = new Paint(Paint.DITHER_FLAG);
+        init();
     }
 
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
-
-        canvasBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-        drawCanvas = new Canvas(canvasBitmap);
+    private void init(){
+        m_DrawPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        m_DrawPaint.setColor(Color.BLACK);
+        m_ShapeFromUser = new ShapeFromUser();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawBitmap(canvasBitmap, 0, 0, canvasPaint);
-        canvas.drawPath(drawPath, drawPaint);
-    }
+        super.onDraw(canvas);
 
-    //detect user touch
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        float touchX = event.getX();
-        float touchY = event.getY();
+        int nWidth = getWidth();
+        int nHeight = getHeight();
 
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                drawPath.moveTo(touchX, touchY);
-                break;
-            case MotionEvent.ACTION_MOVE:
-                drawPath.lineTo(touchX, touchY);
-                break;
-            case MotionEvent.ACTION_UP:
-                drawCanvas.drawPath(drawPath, drawPaint);
-                drawPath.reset();
-                break;
-            default:
-                return false;
+        if((nWidth==0) || (nHeight==0)){
+            return;
         }
 
-        invalidate();
-        return true;
+        float [] flPoints = {30, 30, 50, 50};
+        canvas.drawPoints(flPoints, m_DrawPaint);
+
+        canvas.drawLine(0, 0, 20, 20, m_DrawPaint);
+        canvas.drawLine(20, 0, 0, 20, m_DrawPaint);
+
+
+        float [] flPoints1 = {28, 30, 93, 105, 85, 44};
+        m_ShapeFromUser.setPolygon(flPoints1);
+        canvas.drawPath(m_ShapeFromUser.getPath(), m_ShapeFromUser.getPaint());
     }
 }

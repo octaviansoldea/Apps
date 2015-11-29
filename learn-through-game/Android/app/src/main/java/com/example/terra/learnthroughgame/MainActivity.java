@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.textView_EconFin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EconFinActivity.class));
+                startActivity(new Intent(MainActivity.this, com.example.terra.learnthroughgame.EconFinActivity.class));
             }
         });
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.textView_Music).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MusicActivity.class));
+                startActivity(new Intent(MainActivity.this, com.example.terra.learnthroughgame.MusicActivity.class));
             }
         });
 
