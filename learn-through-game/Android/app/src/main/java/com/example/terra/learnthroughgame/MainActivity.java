@@ -5,15 +5,10 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.media.AudioManager;
-
-import com.example.terra.learnthroughgame.EconActivity;
-import com.example.terra.learnthroughgame.EconLessonActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,10 +28,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.button_Enter).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.textView_EconFin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EconLessonActivity.class));
+                startActivity(new Intent(MainActivity.this, EconFinActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.textView_Music).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MusicActivity.class));
             }
         });
 

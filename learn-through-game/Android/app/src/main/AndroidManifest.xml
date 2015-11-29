@@ -23,16 +23,16 @@
         <activity android:name=".MusicLessonsTOCActivity" />
         <activity android:name=".MusicalInstrumentsQuizActivity" />
         <activity
-            android:name=".EconActivity"
-            android:label="@string/title_activity_econ"
+            android:name="EconFinActivity"
+            android:label="@string/title_activity_econfin"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".EconLessonActivity"
-            android:label="@string/title_activity_econ_lesson"
+            android:name=".EconFinLessonActivity"
+            android:label="@string/title_activity_econfin_lesson"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".EconAssignmentActivity"
-            android:label="@string/title_activity_econ_assignment"
+            android:name=".EconFinAssignmentActivity"
+            android:label="@string/title_activity_econfin_assignment"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

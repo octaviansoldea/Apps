@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Spinner;
 import android.widget.ArrayAdapter;
 
+import com.example.terra.learnthroughgame.MusicLessonsTOCActivity;
+
 public class MusicActivity extends AppCompatActivity {
 
     @Override
